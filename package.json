@@ -12,5 +12,5 @@
   "license": "ISC",
   "dependencies": {
     "convex": "^1.5.1"
-  
+  } 
 }
