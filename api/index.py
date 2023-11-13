@@ -1,4 +1,4 @@
-rom http.server import BaseHTTPRequestHandler
+from http.server import BaseHTTPRequestHandler
  
 class handler(BaseHTTPRequestHandler):
  
