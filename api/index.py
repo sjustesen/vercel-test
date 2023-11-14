@@ -1,11 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello, World!'
+    return '<h1>Hello, World!</h1>'
 
-@app.route('/about')
-def about():
-    return 'About'
+@app.route('/lobby')
+def lobby():
+    data = {'title', 'Hello'}
+    return render_template('lobby.html', context=data)
